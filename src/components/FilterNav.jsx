@@ -54,6 +54,7 @@ function FilterNav () {
         <div className="flex flex-row justify-between w-10/12">
           <div className="flex items-center ">
             <Select
+              className="text-[#7A1AFF]"
               options={[...categories, { label: "Todas", value: "Todas" }]}
               onChange={onChangeSelect}
               placeholder="Categoría"
@@ -73,7 +74,8 @@ function FilterNav () {
                   neutral80: "#F5F5F5", // Hover del chevron
                   neutral60: "#F5F5F5", // Normal del chevron
                   neutral50: "#F5F5F5", // Normal Letra placeholder
-                  neutral0: "#F5F5F5", // Background opcion
+                  neutral0: "#F5F5F5", // Background opcion BDB5F9
+                  neutral5: "#7A1AFF"
                 },
               })}
             />
