@@ -1,17 +1,14 @@
 import ProductsFilters from "../components/AllProducts/ProductsFilters"
 import ProductsGrid from "../components/AllProducts/ProductsGrid"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { ProductsContext } from "../context/ProductsContext"
 import TitleLine from "../components/AllProducts/TitleLine"
 
 function AllProducts() {
-  const { allProducts, filteredProducts } = useContext(ProductsContext)
-  const [selectedFilters, setSelectedFilters] = useState([])
-
-
+  const { filteredProducts } = useContext(ProductsContext)
   return (
-    <div>
-      <div className="mx-36 mb-8">
+    <div className="">
+      <div className="mx-36">
         <TitleLine
           title={"LÁMPARAS"}
         />

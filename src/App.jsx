@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import { useState } from 'react'
 import './App.css'
 import { Route } from 'wouter'
@@ -43,16 +44,16 @@ function App() {
     <>
 
       <AuthProvider auth={auth}>
-        
-          <Navbar />
-          <CartProvider>
-            <Route path='/' component={Home} />
-            <Route path='/cart' component={ShoppingCart} />
-            <Route path="/product/:id" component={ProductDetail} />
-            <Route path="/orderhistory" component={OrderHistory} />
-            <Route path="/allproducts" component={AllProducts} />
-          </CartProvider >
-        
+
+        <Navbar />
+        <CartProvider>
+          <Route path='/' component={Home} />
+          <Route path='/cart' component={ShoppingCart} />
+          <Route path="/product/:id" component={ProductDetail} />
+          <Route path="/orderhistory" component={OrderHistory} />
+          <Route path="/products" component={AllProducts} />
+        </CartProvider >
+
 
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
