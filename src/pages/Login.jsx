@@ -37,14 +37,14 @@ const Login = () => {
 
   return (
     <>
-      <div className="m-2 p-2 flex items-end">
+      <div className="m-2 p-2 w-3/4 mx-auto flex items-end">
         <h1 className="mr-6 text-[#430199] text-3xl">
           Inicio de sesión
         </h1>
         <div className="flex-grow h-0.5 bg-[#430199]"></div>
       </div>
 
-      <div className="flex flex-col items-center justify-center mt-2 rounded-lg p-6 w-3/4 h-full mx-auto bg-white">
+      <div className="flex flex-col items-center justify-center mt-2 rounded-lg p-6 w-3/4 h-full mx-auto bg-white my-36">
         <form onSubmit={handleSubmit} className="flex flex-col text-left gap-4 mb-2 items-center justify-center space-y-4">
           
           <div className='flex flex-col'>
